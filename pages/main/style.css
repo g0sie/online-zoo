@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  --yellow: #ffee2e;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   min-height: 110vh;
@@ -92,7 +87,6 @@ nav ul a {
   line-height: 140%;
   font-weight: 500;
   font-style: normal;
-  transition: 0.3s;
 }
 
 nav ul a:hover,
