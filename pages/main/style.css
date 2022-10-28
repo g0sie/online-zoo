@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --yellow: #ffee2e;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   min-height: 110vh;
@@ -30,24 +35,32 @@ nav.container {
 }
 
 nav a {
-  color: white;
   text-decoration: none;
 }
 
 nav h1.logo {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  padding: 3.5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  width: 82px;
+  height: 52px;
   border: 1px solid white;
   border-radius: 2px;
-  margin-right: 60px;
+  padding-top: 3.55px;
+  margin-right: 63px;
 
-  font-size: 19px;
   font-weight: 400;
-  line-height: 23px;
+  font-style: normal;
+  font-size: 19.0145px;
+  line-height: 120%;
+  color: white;
+
+  cursor: default;
 }
 
 nav h1.logo::before {
@@ -55,6 +68,7 @@ nav h1.logo::before {
   position: absolute;
   top: 23.5px;
   left: 10px;
+
   background-image: url("../../assets/icons/bamboo.svg");
   height: 21px;
   width: 12px;
@@ -63,25 +77,31 @@ nav h1.logo::before {
 nav ul {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 58px;
   width: 100%;
   list-style: none;
 }
 
-nav ul a:nth-last-child(2) {
+nav ul li:nth-last-child(2) {
   flex-grow: 1;
 }
 
 nav ul a {
   color: white;
   font-size: 16px;
+  line-height: 140%;
   font-weight: 500;
+  font-style: normal;
   transition: 0.3s;
 }
 
 nav ul a:hover,
 nav ul a#current-page {
-  color: orange;
+  background: var(--orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 /* watch your favourite animal block */
@@ -91,4 +111,36 @@ section.watch-animal {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 780px;
+}
+
+.circle {
+  position: absolute;
+  top: 92px;
+  left: calc(50% - 465px / 2 + 239.5px);
+
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.circle h2 {
+  position: absolute;
+  left: 73px;
+  top: 74px;
+
+  width: 500.31px;
+
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  cursor: default;
+}
+
+.circle h2 .yellow {
+  color: var(--yellow);
 }
