@@ -14,6 +14,8 @@ body {
   width: 100%;
 }
 
+/* header */
+
 header {
   background-color: black;
   height: 80px;
@@ -80,4 +82,13 @@ nav ul a {
 nav ul a:hover,
 nav ul a#current-page {
   color: orange;
+}
+
+/* watch your favourite animal block */
+
+section.watch-animal {
+  background-image: url(../../assets/images/giant-panda-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 780px;
 }
