@@ -1,0 +1,12 @@
+button {
+  width: 298px;
+  height: 54px;
+  background: var(--orange);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+button.rounded {
+  border-radius: 25px;
+}

@@ -83,10 +83,6 @@ nav ul li:nth-last-child(2) {
 
 nav ul a {
   color: white;
-  font-size: 16px;
-  line-height: 140%;
-  font-weight: 500;
-  font-style: normal;
 }
 
 nav ul a:hover,
@@ -101,13 +97,14 @@ nav ul a#current-page {
 /* watch your favourite animal block */
 
 section.watch-animal {
+  position: relative;
   background-image: url(../../assets/images/giant-panda-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 780px;
 }
 
-.circle {
+.watch-animal .circle {
   position: absolute;
   top: 92px;
   left: calc(50% - 465px / 2 + 239.5px);
@@ -118,7 +115,7 @@ section.watch-animal {
   background: var(--orange);
 }
 
-.circle h2 {
+.watch-animal .circle p {
   position: absolute;
   left: 73px;
   top: 74px;
@@ -135,6 +132,12 @@ section.watch-animal {
   cursor: default;
 }
 
-.circle h2 .yellow {
+.watch-animal .circle p .yellow {
   color: var(--yellow);
+}
+
+.watch-animal button {
+  position: absolute;
+  left: calc(50% - 298px / 2 + 332px);
+  top: 626px;
 }
