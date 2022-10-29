@@ -24,7 +24,7 @@ h3 {
   /* identical to box height, or 47px */
 }
 
-h4 {
+.subtitle {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;

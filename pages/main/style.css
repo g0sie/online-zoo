@@ -7,10 +7,16 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 110vh;
+  /* overflow: hidden; */
+}
+
+section {
+  overflow: hidden;
 }
 
 .container {
   max-width: 1160px;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -140,4 +146,49 @@ section.watch-animal {
   position: absolute;
   left: calc(50% - 298px / 2 + 332px);
   top: 626px;
+}
+
+/* backstage block */
+
+.backstage {
+  position: relative;
+  color: var(--black-blue);
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+
+.backstage .container {
+  display: grid;
+  grid-template-columns: 609px 1fr;
+  gap: 87px;
+
+  height: 403px;
+}
+
+.backstage .bamboo-cap-img {
+  height: 403px;
+  width: 609px;
+  background-image: url(../../assets/images/bamboo-cap.svg);
+  backdrop-filter: blur(2px);
+}
+
+.backstage h2 {
+  margin-bottom: 20px;
+}
+
+.backstage p.subtitle {
+  margin-top: 54px;
+  margin-bottom: 34px;
+}
+
+.backstage .flower-img {
+  position: absolute;
+  top: 12px;
+  right: -93px;
+
+  width: 293px;
+  height: 605px;
+  background: url(../../assets/images/flower_foto1.svg);
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
