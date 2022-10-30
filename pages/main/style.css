@@ -223,38 +223,55 @@ section.watch-animal {
   bottom: 1px;
   right: 1px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
-.pets .cards .border:nth-child(1) .card {
-  background: url("../../assets/images/cards/1_giant_panda.svg");
+.pets .cards .card .image {
+  width: 364px;
+  height: 364px;
+  background-size: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  translate: 0 0;
+  transition: 0.5s;
 }
 
-.pets .cards .border:nth-child(2) .card {
-  background: url("../../assets/images/cards/2_eagles.svg");
+.pets .cards .border:nth-child(1) .card .image {
+  background-image: url("../../assets/images/cards/1_giant_panda.svg");
 }
 
-.pets .cards .border:nth-child(3) .card {
-  background: url("../../assets/images/cards/3_gorillas.svg");
+.pets .cards .border:nth-child(2) .card .image {
+  background-image: url("../../assets/images/cards/2_eagles.svg");
 }
 
-.pets .cards .border:nth-child(4) .card {
-  background: url("../../assets/images/cards/4_alligators.svg");
+.pets .cards .border:nth-child(3) .card .image {
+  background-image: url("../../assets/images/cards/3_gorillas.svg");
 }
 
-.pets .cards .border:nth-child(5) .card {
-  background: url("../../assets/images/cards/5_two-toed_sloth.svg");
+.pets .cards .border:nth-child(4) .card .image {
+  background-image: url("../../assets/images/cards/4_alligators.svg");
 }
 
-.pets .cards .border:nth-child(6) .card {
-  background: url("../../assets/images/cards/6_cheetahs.svg");
+.pets .cards .border:nth-child(5) .card .image {
+  background-image: url("../../assets/images/cards/5_two-toed_sloth.svg");
 }
 
-.pets .cards .border:nth-child(7) .card {
-  background: url("../../assets/images/cards/7_penguin.svg");
+.pets .cards .border:nth-child(6) .card .image {
+  background-image: url("../../assets/images/cards/6_cheetahs.svg");
 }
 
-.pets .cards .border:nth-child(8) .card {
-  background: url("../../assets/images/cards/3_gorillas.svg");
+.pets .cards .border:nth-child(7) .card .image {
+  background-image: url("../../assets/images/cards/7_penguin.svg");
+}
+
+.pets .cards .border:nth-child(8) .card .image {
+  background-image: url("../../assets/images/cards/3_gorillas.svg");
+}
+
+.pets .cards .card:hover .image {
+  width: 384px;
+  height: 384px;
+  translate: -10px -10px;
 }
 
 .pets .card .description {
@@ -266,7 +283,17 @@ section.watch-animal {
 
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+
   background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.pets .cards .card:hover .description {
+  height: 100px;
+
+  background-color: black;
+  color: white;
 }
 
 .pets .description p.btn {
