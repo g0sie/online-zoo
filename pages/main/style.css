@@ -345,3 +345,21 @@ section.watch-animal {
   left: 50%;
   translate: -50% 0;
 }
+
+.pets .flower-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 292px;
+  height: 460px;
+  background: url("../../assets/images/palm_foto.svg");
+}
+
+.pets .flower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 368px;
+  height: 275px;
+  background: url("../../assets/images/strelitzia\ 1.svg");
+}
