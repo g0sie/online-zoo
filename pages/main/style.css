@@ -195,13 +195,20 @@ section.watch-animal {
 
 /* pets section */
 
+.pets {
+  padding-bottom: 234px;
+}
+
 .pets .cards {
   display: grid;
   grid-template-columns: repeat(4, 366px);
   grid-template-rows: repeat(2, 426px);
+  column-gap: 30px;
+  row-gap: 20px;
+  overflow: hidden;
 }
 
-.pets .cards .margin {
+.pets .cards .border {
   position: relative;
   width: 100%;
   height: 100%;
@@ -218,8 +225,36 @@ section.watch-animal {
   border-radius: 5px;
 }
 
-.pets .cards .card:nth-child(1) {
+.pets .cards .border:nth-child(1) .card {
   background: url("../../assets/images/cards/1_giant_panda.svg");
+}
+
+.pets .cards .border:nth-child(2) .card {
+  background: url("../../assets/images/cards/2_eagles.svg");
+}
+
+.pets .cards .border:nth-child(3) .card {
+  background: url("../../assets/images/cards/3_gorillas.svg");
+}
+
+.pets .cards .border:nth-child(4) .card {
+  background: url("../../assets/images/cards/4_alligators.svg");
+}
+
+.pets .cards .border:nth-child(5) .card {
+  background: url("../../assets/images/cards/5_two-toed_sloth.svg");
+}
+
+.pets .cards .border:nth-child(6) .card {
+  background: url("../../assets/images/cards/6_cheetahs.svg");
+}
+
+.pets .cards .border:nth-child(7) .card {
+  background: url("../../assets/images/cards/7_penguin.svg");
+}
+
+.pets .cards .border:nth-child(8) .card {
+  background: url("../../assets/images/cards/3_gorillas.svg");
 }
 
 .pets .card .description {
@@ -256,4 +291,10 @@ section.watch-animal {
   position: absolute;
   top: 10px;
   right: 13px;
+}
+
+.pets .description .meat-fish {
+  position: absolute;
+  top: 8px;
+  right: 11px;
 }
