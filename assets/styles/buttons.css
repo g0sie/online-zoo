@@ -12,6 +12,30 @@ button.rounded {
   border-radius: 25px;
 }
 
+button.arrow {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+button.arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 9px);
+  height: 10px;
+  width: 18px;
+}
+
+button.arrow.left::after {
+  background-image: url(../icons/arrow-left.svg);
+}
+
+button.arrow.right::after {
+  background-image: url(../icons/arrow-right.svg);
+}
+
 button:hover {
   background: #e47209;
 }

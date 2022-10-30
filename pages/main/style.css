@@ -196,6 +196,7 @@ section.watch-animal {
 /* pets section */
 
 .pets {
+  position: relative;
   padding-bottom: 234px;
 }
 
@@ -324,4 +325,23 @@ section.watch-animal {
   position: absolute;
   top: 8px;
   right: 11px;
+}
+
+.pets button.arrow.left {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  left: calc(50% - 1158px / 2 - 63px - 20px);
+}
+
+.pets button.arrow.right {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  right: calc(50% - 1158px / 2 - 63px - 20px);
+}
+
+.pets button.rounded {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  translate: -50% 0;
 }
