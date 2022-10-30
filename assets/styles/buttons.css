@@ -4,8 +4,8 @@ button {
   background: var(--orange);
   border: none;
   color: white;
-  text-transform: uppercase;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 button.rounded {

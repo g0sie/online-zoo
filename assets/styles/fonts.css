@@ -31,8 +31,7 @@ h3 {
   /* identical to box height, or 29px */
 }
 
-button,
-a {
+.btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
