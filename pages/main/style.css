@@ -363,3 +363,186 @@ section.watch-animal {
   height: 275px;
   background: url("../../assets/images/strelitzia\ 1.svg");
 }
+
+/* pick and feed a friend block */
+
+.pick-and-feed {
+  height: 1004px;
+  background: var(--orange-gradient);
+  opacity: 0.9;
+  color: var(--black-blue);
+}
+
+.pick-and-feed .container {
+  position: relative;
+  margin: 69px auto;
+  height: 835px;
+
+  background: var(--frosted-glass-white);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.pick-and-feed h2 {
+  position: absolute;
+  width: 463px;
+  height: 58px;
+  left: calc(50% - 463px / 2 + 1.5px);
+  top: 41px;
+
+  text-align: center;
+  color: #fe9013;
+}
+
+.pick-and-feed p.subtitle {
+  position: absolute;
+  width: 843px;
+  height: 29px;
+  left: calc(50% - 843px / 2 - 59.5px);
+  top: 129px;
+}
+
+.pick-and-feed p:nth-of-type(2) {
+  position: absolute;
+  width: 1061px;
+  height: 21px;
+  left: calc(50% - 1061px / 2 + 49.5px);
+  top: 198px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.pick-and-feed p:nth-of-type(3) {
+  position: absolute;
+  width: 863px;
+  height: 42px;
+  left: calc(50% - 863px / 2 - 49.5px);
+  top: 229px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.pick-and-feed p:nth-of-type(3) a {
+  color: var(--black-blue);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.pick-and-feed .underline {
+  content: "";
+  position: absolute;
+  width: 178px;
+  height: 1px;
+  left: calc(50% - 178px / 2 - 305px);
+  top: 272px;
+  background: #fe9013;
+}
+
+.pick-and-feed h3 {
+  position: absolute;
+  width: 209px;
+  height: 47px;
+  left: calc(50% - 209px / 2 - 0.5px);
+  top: 331px;
+}
+
+.pick-and-feed .widget {
+  position: absolute;
+  width: 168px;
+  height: 244px;
+  top: 418px;
+}
+
+.pick-and-feed .widget.pay {
+  left: calc(50% - 168px / 2 - 298px);
+}
+
+.pick-and-feed .widget.zoo {
+  left: calc(50% - 168px / 2);
+}
+
+.pick-and-feed .widget.monkey {
+  left: calc(50% - 168px / 2 + 298px);
+}
+
+.pick-and-feed .widget .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 168px;
+  height: 168px;
+  border-radius: 5px;
+  background: var(--orange);
+}
+
+.pick-and-feed .widget .icon {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+  width: 166px;
+  height: 166px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.pick-and-feed .widget.pay .icon,
+.pick-and-feed .widget.monkey .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-and-feed .widget.pay .icon .image {
+  height: 60px;
+  width: 108px;
+  background-image: url(../../assets/icons/pay.svg);
+}
+
+.pick-and-feed .widget.zoo .icon .image {
+  margin-top: 37px;
+  margin-left: 41px;
+  height: 96px;
+  width: 87px;
+  background-image: url(../../assets/icons/zoo.png);
+}
+
+.pick-and-feed .widget.monkey .icon .image {
+  height: 73px;
+  width: 126px;
+  background-image: url(../../assets/icons/monkey.svg);
+}
+
+.pick-and-feed .widget p {
+  position: absolute;
+  left: 0;
+  top: 198px;
+}
+
+.pick-and-feed .widget.pay::after,
+.pick-and-feed .widget.zoo::after {
+  content: "";
+  position: absolute;
+  top: calc(168px / 2 - 37px / 2);
+  left: calc(168px + 30px);
+  width: 71px;
+  height: 37px;
+  background-image: url("../../assets/icons/widget-arrow.svg");
+}
+
+.pick-and-feed button {
+  position: absolute;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 298px / 2);
+  top: 722px;
+}
