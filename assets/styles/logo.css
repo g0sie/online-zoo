@@ -1,0 +1,32 @@
+.logo-text {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  width: 82px;
+  height: 52px;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding-top: 3.55px;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19.0145px;
+  line-height: 120%;
+  color: white;
+}
+
+.logo-text::before {
+  content: "";
+  position: absolute;
+  top: 23.5px;
+  left: 10px;
+
+  background-image: url("../../assets/icons/bamboo.svg");
+  height: 21px;
+  width: 12px;
+}

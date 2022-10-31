@@ -8,20 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/fonts.css" />
     <link rel="stylesheet" href="assets/styles/colors.css" />
     <link rel="stylesheet" href="assets/styles/buttons.css" />
+    <link rel="stylesheet" href="assets/styles/logo.css" />
     <link rel="stylesheet" href="pages/main/style.css" />
   </head>
   <body>
     <section class="watch-animal">
       <header>
         <nav class="container">
-          <a href="#"
-            ><h1 class="logo"><span>PetStory</span> <span>online</span></h1></a
+          <a class="logo" href="#"
+            ><h1 class="logo-text">
+              <span>PetStory</span> <span>online</span>
+            </h1></a
           >
           <ul>
             <li><a class="btn" href="#" id="current-page">About</a></li>
@@ -353,5 +356,50 @@
       </div>
       <div class="flower-img"></div>
     </section>
+    <footer>
+      <div class="container">
+        <a class="logo" href="#"
+          ><p class="logo-text"><span>PetStory</span> <span>online</span></p></a
+        >
+        <a href="pages/donate/index.html">
+          <button class="btn">donate for volunteers</button></a
+        >
+        <ul class="socials">
+          <li class="facebook">
+            <a href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="twitter"><a href="https://twitter.com/">Twitter</a></li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="youtube">
+            <a href="https://www.youtube.com/">YouTube</a>
+          </li>
+        </ul>
+        <nav>
+          <a class="btn" href="#" id="current-page">About</a>
+          <a class="btn" href="#">Map</a>
+          <a class="btn" href="#">Zoos</a>
+          <a class="btn" href="#">Contact us</a>
+        </nav>
+        <div class="copyright">
+          <p>Designed by Alisa Samborskaya</p>
+          <p>&copy;RSSchool &amp; &copy;Yem Digital 2021</p>
+        </div>
+        <form action="#">
+          <label class="subtitle" for="email">Subscribe to our news</label>
+          <input type="submit" value="Submit" />
+          <div class="border">
+            <input
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

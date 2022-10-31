@@ -3,6 +3,7 @@ button {
   height: 54px;
   background: var(--orange);
   border: none;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
