@@ -411,7 +411,11 @@ section.watch-animal {
   height: 1px;
   left: calc(50% - 178px / 2 - 305px);
   top: 272px;
-  background: #fe9013;
+  background-color: #fe9013;
+}
+
+.pick-and-feed p:nth-of-type(3):has(a:hover) ~ .underline {
+  background-color: var(--green);
 }
 
 .pick-and-feed h3 {
@@ -752,8 +756,9 @@ footer ul.socials li a {
   color: #ffffff;
 }
 
-footer ul.socials li a:hover {
-  background: var(--orange);
+footer ul.socials li a:hover,
+footer ul.socials li a:active {
+  background: var(--green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -771,8 +776,9 @@ footer ul.socials li a::before {
   background: rgba(196, 196, 196, 0.5);
 }
 
-footer ul.socials li a:hover::before {
-  background: var(--orange);
+footer ul.socials li a:hover::before,
+footer ul.socials li a:active::before {
+  background: var(--green);
 }
 
 footer ul.socials li.facebook a::after {
@@ -852,6 +858,13 @@ footer .copyright p {
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+}
+
+footer .copyright:hover p,
+footer .copyright:active p {
+  content: "";
+  margin-bottom: 9px;
+  border-bottom: 1px solid var(--green);
 }
 
 footer form {
