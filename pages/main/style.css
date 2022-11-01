@@ -708,7 +708,7 @@ section.watch-animal {
 
 footer {
   height: 443px;
-  background-color: black;
+  background-color: #111115;
 }
 
 footer .container {
@@ -913,7 +913,7 @@ footer form input[type="email"] {
   font-size: 16px;
   line-height: 140%;
   color: #bdbdbd;
-  background-color: black;
+  background-color: #111115;
   border: none;
 }
 
