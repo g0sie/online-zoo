@@ -905,7 +905,7 @@ footer form input[type="email"] {
   top: 0.7px;
   right: 0.7px;
   bottom: 0.7px;
-  left: 0.7px;
+  left: 1px;
   padding: 10px;
 
   font-style: normal;
