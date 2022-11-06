@@ -4,3 +4,8 @@
   background-position: bottom;
   background-size: cover;
 }
+
+.pick-and-feed {
+  height: 1482px;
+  background-image: var(--orange-gradient);
+}
