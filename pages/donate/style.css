@@ -1,0 +1,6 @@
+.panda-bg {
+  height: calc(390px - 4px);
+  background-image: url("../../assets/images/panda_bg.svg");
+  background-position: bottom;
+  background-size: cover;
+}
