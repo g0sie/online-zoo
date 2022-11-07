@@ -9,3 +9,198 @@
   height: 1482px;
   background-image: var(--orange-gradient);
 }
+
+.pick-and-feed h3 {
+  margin-top: 40px;
+  height: 47px;
+  color: white;
+}
+
+.pick-and-feed .container > p {
+  margin-top: 10px;
+  height: 94px;
+  color: white;
+  font-weight: 500;
+}
+
+.pick-and-feed h3.orange {
+  margin-top: 40px;
+  height: 47px;
+  color: #fe9013;
+}
+
+.pick-and-feed .donate {
+  position: relative;
+  height: 964px;
+  margin-top: 60px;
+  margin-bottom: 180px;
+  padding-top: 40px;
+  padding-bottom: 62px;
+  padding-left: 92px;
+  padding-right: 92px;
+
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  color: var(--black-blue);
+}
+
+.donate h2 {
+  height: 58px;
+  text-align: center;
+  color: #fe9013;
+}
+
+.donate .subtitle {
+  margin-top: 20px;
+  height: 29px;
+}
+
+.donate .diets {
+  margin-top: 165px;
+  margin-left: 215px;
+  width: 159px;
+  text-align: center;
+}
+
+.donate .diets .number {
+  height: 58px;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  color: black;
+}
+
+.donate .diets .text {
+  margin-top: 11px;
+  height: 22px;
+}
+
+.donate .x {
+  position: absolute;
+  top: 337px;
+  left: 477px;
+}
+
+.donate .panda {
+  position: absolute;
+  top: 207px;
+  left: 555px;
+}
+
+.donate .label {
+  margin-top: 98px;
+  margin-left: 4px;
+  width: 57px;
+  height: 22px;
+  color: black;
+}
+
+.donate .buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 27px;
+  margin-top: 17px;
+  margin-bottom: 12px;
+  padding-left: calc(26px - 15px);
+  padding-right: calc(30px - 15px);
+
+  border-radius: 2px;
+  background-color: #404950;
+}
+
+.donate .buttons .line {
+  position: absolute;
+  top: 13px;
+  left: 31px;
+
+  height: 2px;
+  width: 915px;
+  background-color: #72828e;
+}
+
+.donate .buttons .radio {
+  position: relative;
+  align-self: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 15px solid transparent;
+  border-radius: 50%;
+  background: #ffee2e padding-box;
+  z-index: 1;
+}
+
+.radio:hover::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  translate: -15px -15px;
+  background: url("../../assets/icons/roller_icon.png");
+  opacity: 0.5;
+}
+
+.radio#clicked::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  translate: -15px -15px;
+  background: url("../../assets/icons/roller_icon.png");
+  opacity: 1;
+}
+
+.radio::after {
+  position: absolute;
+  top: calc(9px + 21px);
+  left: calc(-57px / 2);
+  width: 57px;
+  height: 36px;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  color: var(--black-blue);
+  text-align: left;
+}
+
+.radio.dol5000::after {
+  content: "$5000";
+}
+
+.radio.dol2000::after {
+  content: "$2000";
+}
+
+.radio.dol1000::after {
+  content: "$1000";
+}
+
+.radio.dol500::after {
+  content: "$500";
+}
+
+.radio.dol250::after {
+  content: "$250";
+}
+
+.radio.dol100::after {
+  content: "$100";
+}
+
+.radio.dol50::after {
+  content: "$50";
+}
+
+.radio.dol25::after {
+  content: "$25";
+}
+
+.radio:hover:after,
+.radio#clicked::after {
+  color: #fe9013;
+}
