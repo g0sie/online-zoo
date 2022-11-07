@@ -1,6 +1,8 @@
 button {
   width: 298px;
   height: 54px;
+  padding-top: 2px;
+
   background: var(--orange);
   border: none;
   border-radius: 5px;

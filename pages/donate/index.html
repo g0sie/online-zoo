@@ -73,7 +73,7 @@
             we&apos;re glad.
           </p>
           <div class="diets">
-            <p class="number">4</p>
+            <p class="number" id="diets-number">4</p>
             <p class="text">Panda diet for the day.</p>
           </div>
           <img
@@ -98,6 +98,20 @@
             <button class="radio dol25"></button>
             <div class="line"></div>
           </div>
+          <form>
+            <input type="number" placeholder="Another amount" />
+            <img
+              class="dollar"
+              src="../../assets/icons/dollar.svg"
+              alt="dollar sign"
+            />
+            <input type="radio" name="frequency" id="monthly" />
+            <label for="monthly">Monthly</label>
+            <input type="radio" name="frequency" id="once" checked />
+            <label for="once">Once</label>
+            <button class="btn rounded" type="submit">feed a friend now</button>
+          </form>
+          <p class="share">Share with your friends on social networks</p>
         </div>
       </div>
     </section>
