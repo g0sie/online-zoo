@@ -164,14 +164,14 @@ footer form .border {
   height: 42px;
 
   border-radius: 2px;
-  background: var(--red);
-}
-
-footer form .border:has(input[type="email"]:valid) {
   background: var(--orange);
 }
 
-footer form .border:has(input[type="email"]:active) {
+footer form .border:has(input[type="email"]:focus:invalid) {
+  background: var(--red);
+}
+
+footer form .border:has(input[type="email"]:focus:valid) {
   background: var(--green);
 }
 
@@ -207,17 +207,25 @@ footer form input[type="submit"] {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  color: var(--black-blue);
 
-  color: var(--red);
   border: 1px solid;
   border-radius: 5px;
   background-color: var(--gray-light);
 }
 
 footer form input[type="submit"]:has(~ .border input[type="email"]:valid) {
-  color: var(--black-blue);
+  cursor: pointer;
 }
 
-footer form input[type="submit"]:has(~ .border input[type="email"]:active) {
+footer
+  form
+  input[type="submit"]:has(~ .border input[type="email"]:focus:valid) {
   color: var(--green);
+}
+
+footer
+  form
+  input[type="submit"]:has(~ .border input[type="email"]:focus:invalid) {
+  color: var(--red);
 }
