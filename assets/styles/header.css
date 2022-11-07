@@ -1,0 +1,39 @@
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+  width: 100%;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+}
+
+nav ul a:hover,
+nav ul a#current-page {
+  background: var(--orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+header {
+  background-color: black;
+  height: 80px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav a.logo {
+  margin-right: 63px;
+}
+
+header nav ul li:nth-last-child(2) {
+  flex-grow: 1;
+}
