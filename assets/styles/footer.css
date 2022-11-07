@@ -156,31 +156,12 @@ footer form label {
   color: white;
 }
 
-footer form .border {
+footer form input[type="email"] {
   position: absolute;
   top: 43px;
   left: 0;
   width: 228px;
   height: 42px;
-
-  border-radius: 2px;
-  background: var(--orange);
-}
-
-footer form .border:has(input[type="email"]:focus:invalid) {
-  background: var(--red);
-}
-
-footer form .border:has(input[type="email"]:focus:valid) {
-  background: var(--green);
-}
-
-footer form input[type="email"] {
-  position: absolute;
-  top: 0.7px;
-  right: 0.7px;
-  bottom: 0.7px;
-  left: 1px;
   padding: 10px;
 
   font-style: normal;
@@ -188,12 +169,25 @@ footer form input[type="email"] {
   font-size: 16px;
   line-height: 140%;
   color: #bdbdbd;
-  background-color: #111115;
-  border: none;
+
+  border-radius: 2px;
+  border: 0.7px solid transparent;
+  background: linear-gradient(#111115, #111115) padding-box,
+    var(--orange) border-box;
 }
 
 footer form input[type="email"]:focus {
   outline: none;
+}
+
+footer form input[type="email"]:focus:invalid {
+  background: linear-gradient(#111115, #111115) padding-box,
+    var(--red) border-box;
+}
+
+footer form input[type="email"]:focus:valid {
+  background: linear-gradient(#111115, #111115) padding-box,
+    var(--green) border-box;
 }
 
 footer form input[type="submit"] {
@@ -214,18 +208,14 @@ footer form input[type="submit"] {
   background-color: var(--gray-light);
 }
 
-footer form input[type="submit"]:has(~ .border input[type="email"]:valid) {
+footer form input[type="submit"]:has(~ input[type="email"]:valid) {
   cursor: pointer;
 }
 
-footer
-  form
-  input[type="submit"]:has(~ .border input[type="email"]:focus:valid) {
+footer form input[type="submit"]:has(~ input[type="email"]:focus:valid) {
   color: var(--green);
 }
 
-footer
-  form
-  input[type="submit"]:has(~ .border input[type="email"]:focus:invalid) {
+footer form input[type="submit"]:has(~ input[type="email"]:focus:invalid) {
   color: var(--red);
 }
