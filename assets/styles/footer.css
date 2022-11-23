@@ -52,9 +52,8 @@ footer ul.socials li a:hover,
 footer ul.socials li a:active {
   background: var(--green);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 footer ul.socials li a::before {
@@ -80,7 +79,7 @@ footer ul.socials li.facebook a::after {
   top: calc(-2.5px + 26px / 2 - 16px / 2);
   width: 8px;
   height: 16px;
-  background: url(../../assets/icons/facebook.svg);
+  background: url("../../assets/icons/socials/facebook.png");
 }
 
 footer ul.socials li.twitter a::after {
@@ -90,7 +89,7 @@ footer ul.socials li.twitter a::after {
   top: calc(-2.5px + 26px / 2 - 14px / 2);
   width: 16px;
   height: 14px;
-  background: url(../../assets/icons/twitter.svg);
+  background: url("../../assets/icons/socials/twitter.png");
 }
 
 footer ul.socials li.instagram a::after {
@@ -100,7 +99,7 @@ footer ul.socials li.instagram a::after {
   top: calc(-2.5px + 26px / 2 - 16px / 2);
   width: 16px;
   height: 16px;
-  background: url(../../assets/icons/instagram.svg);
+  background: url("../../assets/icons/socials/instagram.png");
 }
 
 footer ul.socials li.youtube a::after {
@@ -110,7 +109,7 @@ footer ul.socials li.youtube a::after {
   top: calc(-2.5px + 26px / 2 - 13px / 2);
   width: 18px;
   height: 13px;
-  background: url(../../assets/icons/youtube.svg);
+  background: url("../../assets/icons/socials/youtube.png");
 }
 
 footer nav {
