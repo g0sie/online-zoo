@@ -1,9 +1,10 @@
-section.watch-animal {
+.watch-animal {
   position: relative;
   background-image: url(../../assets/images/panda_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 780px;
+  background-position: center;
+  height: 780px;
 }
 
 .watch-animal .circle {
@@ -42,4 +43,33 @@ section.watch-animal {
   position: absolute;
   left: calc(50% - 298px / 2 + 332px);
   top: 626px;
+}
+
+@media (max-width: 1200px) {
+  .watch-animal {
+    height: 584px;
+  }
+
+  .watch-animal .circle {
+    top: 69px;
+    left: calc(50% - 367px / 2 + 139.5px);
+
+    width: 367px;
+    height: 367px;
+  }
+
+  .watch-animal .circle p {
+    left: 58px;
+    top: 53.8px;
+
+    width: 400.25px;
+    height: 320px;
+
+    font-size: 85px;
+  }
+
+  .watch-animal button {
+    left: calc(50% - 298px / 2 + 214px);
+    top: 483px;
+  }
 }
