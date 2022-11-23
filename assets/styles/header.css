@@ -12,11 +12,10 @@ nav a {
 
 nav ul a:hover,
 nav ul a#current-page {
-  background: var(--orange);
+  background: var(--orange) padding-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 header {
@@ -36,4 +35,10 @@ header nav a.logo {
 
 header nav ul li:nth-last-child(2) {
   flex-grow: 1;
+}
+
+@container (max-width: 940px) {
+  nav ul {
+    gap: 48px;
+  }
 }
