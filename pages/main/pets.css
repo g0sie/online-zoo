@@ -1,0 +1,153 @@
+.pets {
+  position: relative;
+  padding-bottom: 234px;
+}
+
+.pets .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 366px);
+  grid-template-rows: repeat(2, 426px);
+  column-gap: 30px;
+  row-gap: 20px;
+  overflow: hidden;
+}
+
+.pets .cards .card {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: var(--orange2) border-box;
+  overflow: hidden;
+}
+
+.pets .cards .card .image {
+  height: 424px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  translate: 0 0;
+  transition: 0.5s;
+}
+
+.pets .cards .card:nth-child(1) .image {
+  background-image: url("../../assets/images/cards/1_giant_panda.svg");
+}
+
+.pets .cards .card:nth-child(2) .image {
+  background-image: url("../../assets/images/cards/2_eagles.svg");
+}
+
+.pets .cards .card:nth-child(3) .image {
+  background-image: url("../../assets/images/cards/3_gorillas.svg");
+}
+
+.pets .cards .card:nth-child(4) .image {
+  background-image: url("../../assets/images/cards/4_alligators.svg");
+}
+
+.pets .cards .card:nth-child(5) .image {
+  background-image: url("../../assets/images/cards/5_two-toed_sloth.svg");
+}
+
+.pets .cards .card:nth-child(6) .image {
+  background-image: url("../../assets/images/cards/6_cheetahs.svg");
+}
+
+.pets .cards .card:nth-child(7) .image {
+  background-image: url("../../assets/images/cards/7_penguin.svg");
+}
+
+.pets .cards .card:nth-child(8) .image {
+  background-image: url("../../assets/images/cards/3_gorillas.svg");
+}
+
+.pets .cards .card:hover .image {
+  transform: scale(calc(374 / 364));
+}
+
+.pets .card .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.pets .cards .card:hover .description {
+  height: calc(424px / 2);
+
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.pets .description p.btn {
+  position: absolute;
+  width: 294px;
+  height: 22px;
+  left: 16px;
+  top: 8px;
+
+  text-transform: uppercase;
+}
+
+.pets .description p.small {
+  position: absolute;
+  width: 294px;
+  height: 22px;
+  left: 16px;
+  top: 28px;
+}
+
+.pets .description .banana-bamboo {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+
+.pets .description .meat-fish {
+  position: absolute;
+  top: 8px;
+  right: 11px;
+}
+
+.pets button.arrow.left {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  left: calc(50% - 1158px / 2 - 63px - 20px);
+}
+
+.pets button.arrow.right {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  right: calc(50% - 1158px / 2 - 63px - 20px);
+}
+
+.pets button.rounded {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.pets .flower-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 292px;
+  height: 460px;
+  background: url("../../assets/images/palm_foto.svg");
+}
+
+.pets .flower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 368px;
+  height: 275px;
+  background: url("../../assets/images/strelitzia\ 1.svg");
+}
