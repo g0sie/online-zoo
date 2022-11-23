@@ -39,7 +39,7 @@ header nav ul li:nth-last-child(2) {
   flex-grow: 1;
 }
 
-@container (max-width: 940px) {
+@media (max-width: 1200px) {
   nav ul {
     gap: 48px;
   }
