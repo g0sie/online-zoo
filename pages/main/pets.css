@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(4, 366px);
   grid-template-rows: repeat(2, 426px);
-  column-gap: 30px;
+  column-gap: 31px;
   row-gap: 20px;
   overflow: hidden;
 }
@@ -141,6 +141,7 @@
   width: 292px;
   height: 460px;
   background: url("../../assets/images/palm_foto.png");
+  z-index: -1;
 }
 
 .pets .flower-right {
@@ -150,4 +151,72 @@
   width: 368px;
   height: 275px;
   background: url("../../assets/images/strelitzia.png");
+  z-index: -1;
+}
+
+@media (max-width: 1350px) {
+  .pets .cards {
+    row-gap: 92px;
+  }
+
+  .pets button.arrow.left {
+    left: calc(50% - 366px / 2);
+    top: calc(426px + 92px / 2 - 62px / 2);
+  }
+
+  .pets button.arrow.right {
+    top: calc(426px + 92px / 2 - 62px / 2);
+    right: calc(50% - 366px / 2);
+  }
+}
+
+@media (max-width: 1200px) {
+  .pets {
+    padding-bottom: 274px;
+  }
+
+  .pets .cards {
+    grid-template-columns: repeat(4, 295px);
+    grid-template-rows: repeat(2, 354px);
+    column-gap: 27px;
+  }
+
+  .pets .cards .card .image {
+    height: 354px;
+  }
+
+  .pets .cards .card:hover .image {
+    transform: scale(calc(364 / 354));
+  }
+
+  .pets button.arrow.left {
+    left: calc(50% - 295px / 2);
+    top: 369px;
+  }
+
+  .pets button.arrow.right {
+    top: 369px;
+    right: calc(50% - 295px / 2);
+  }
+
+  .pets button.rounded {
+    bottom: 140px;
+  }
+
+  .pets .flower-left {
+    width: 194px;
+    height: 202px;
+    background: url("../../assets/images/palm_foto_194x202.png");
+  }
+
+  .pets .flower-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 241px;
+    height: 180px;
+    background: url("../../assets/images/strelitzia.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
