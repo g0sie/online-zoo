@@ -31,35 +31,35 @@
 }
 
 .pets .cards .card:nth-child(1) .image {
-  background-image: url("../../assets/images/cards/1_giant_pandas.jpg");
+  background-image: url("../../../assets/images/cards/1_giant_pandas.jpg");
 }
 
 .pets .cards .card:nth-child(2) .image {
-  background-image: url("../../assets/images/cards/2_eagles.jpg");
+  background-image: url("../../../assets/images/cards/2_eagles.jpg");
 }
 
 .pets .cards .card:nth-child(3) .image {
-  background-image: url("../../assets/images/cards/3_gorillas.jpg");
+  background-image: url("../../../assets/images/cards/3_gorillas.jpg");
 }
 
 .pets .cards .card:nth-child(4) .image {
-  background-image: url("../../assets/images/cards/4_alligators.jfif");
+  background-image: url("../../../assets/images/cards/4_alligators.jfif");
 }
 
 .pets .cards .card:nth-child(5) .image {
-  background-image: url("../../assets/images/cards/5_two-toed_sloth.jpg");
+  background-image: url("../../../assets/images/cards/5_two-toed_sloth.jpg");
 }
 
 .pets .cards .card:nth-child(6) .image {
-  background-image: url("../../assets/images/cards/6_cheetahs.jpg");
+  background-image: url("../../../assets/images/cards/6_cheetahs.jpg");
 }
 
 .pets .cards .card:nth-child(7) .image {
-  background-image: url("../../assets/images/cards/7_penguin.jpg");
+  background-image: url("../../../assets/images/cards/7_penguin.jpg");
 }
 
 .pets .cards .card:nth-child(8) .image {
-  background-image: url("../../assets/images/cards/8_gorillas.jfif");
+  background-image: url("../../../assets/images/cards/8_gorillas.jfif");
 }
 
 .pets .cards .card:hover .image {
@@ -140,7 +140,7 @@
   left: 0;
   width: 292px;
   height: 460px;
-  background: url("../../assets/images/palm_foto.png");
+  background: url("../../../assets/images/palm_foto.png");
   z-index: -1;
 }
 
@@ -150,7 +150,7 @@
   right: 0;
   width: 368px;
   height: 275px;
-  background: url("../../assets/images/strelitzia.png");
+  background: url("../../../assets/images/strelitzia.png");
   z-index: -1;
 }
 

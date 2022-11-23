@@ -47,7 +47,7 @@
   height: 37px;
   left: 16px;
   top: 15px;
-  background: url("../../assets/icons/user1.svg");
+  background: url("../../../assets/icons/user1.svg");
 }
 
 .testimonials .testimonial .user-icon img {
@@ -170,5 +170,5 @@
   right: 0;
   width: 247px;
   height: 408px;
-  background: url(../../assets/images/leav_foto.svg);
+  background: url("../../../assets/images/leav_foto.svg");
 }
