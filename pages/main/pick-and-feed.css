@@ -144,7 +144,7 @@
 .pick-and-feed .widget.pay .icon .image {
   height: 60px;
   width: 108px;
-  background-image: url(../../assets/icons/pay.svg);
+  background-image: url(../../assets/icons/widgets/pay.png);
 }
 
 .pick-and-feed .widget.zoo .icon .image {
@@ -152,13 +152,13 @@
   margin-left: 41px;
   height: 96px;
   width: 87px;
-  background-image: url(../../assets/icons/zoo.png);
+  background-image: url(../../assets/icons/widgets/zoo.png);
 }
 
 .pick-and-feed .widget.monkey .icon .image {
   height: 73px;
   width: 126px;
-  background-image: url(../../assets/icons/monkey.svg);
+  background-image: url(../../assets/icons/widgets/monkey.png);
 }
 
 .pick-and-feed .widget p {
@@ -175,7 +175,7 @@
   left: calc(100% + 30px);
   width: 71px;
   height: 37px;
-  background-image: url("../../assets/icons/widget-arrow.svg");
+  background-image: url("../../assets/icons/widgets/arrow.png");
 }
 
 .pick-and-feed button {
