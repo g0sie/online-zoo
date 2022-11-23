@@ -230,3 +230,13 @@ footer form input[type="submit"]:has(~ input[type="email"]:focus:valid) {
 footer form input[type="submit"]:has(~ input[type="email"]:focus:invalid) {
   color: var(--red);
 }
+
+@media (max-width: 1200px) {
+  footer nav {
+    left: 291px;
+  }
+
+  footer form {
+    right: 32px;
+  }
+}
