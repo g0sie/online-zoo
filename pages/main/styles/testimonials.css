@@ -45,7 +45,7 @@
   height: 37px;
   left: 16px;
   top: 15px;
-  background: url("../../../assets/icons/user1.svg");
+  background: url("../../../assets/icons/user_icon.png");
 }
 
 .testimonials .testimonial .user-icon img {
@@ -169,7 +169,7 @@
   right: 0;
   width: 247px;
   height: 408px;
-  background: url("../../../assets/images/leav_foto.svg");
+  background: url("../../../assets/images/leav_foto.png");
 }
 
 @media (max-width: 1200px) {
@@ -206,9 +206,7 @@
   }
 
   .testimonials button {
-    position: absolute;
     top: calc(468px + 80px);
-    left: 0;
   }
 
   .testimonials .flower-img {
