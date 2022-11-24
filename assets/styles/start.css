@@ -40,3 +40,9 @@ input[type="number"] {
     max-width: 940px;
   }
 }
+
+@media (max-width: 960px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+}

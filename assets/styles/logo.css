@@ -30,3 +30,23 @@
   height: 21px;
   width: 12px;
 }
+
+@media (max-width: 700px) {
+  .logo-text {
+    width: 47px;
+    height: 29px;
+    border: none;
+    padding-top: 2.29px;
+
+    font-size: 12.29px;
+  }
+
+  .logo-text::before {
+    top: 13px;
+    left: 3px;
+
+    background-image: url("../../assets/icons/bamboo9x14.png");
+    height: 14px;
+    width: 9px;
+  }
+}
