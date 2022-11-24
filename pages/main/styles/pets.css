@@ -206,7 +206,7 @@
   .pets .flower-left {
     width: 194px;
     height: 202px;
-    background: url("../../assets/images/palm_foto_194x202.png");
+    background: url("../../../assets/images/palm_foto_194x202.png");
   }
 
   .pets .flower-right {
@@ -215,7 +215,7 @@
     right: 0;
     width: 241px;
     height: 180px;
-    background: url("../../assets/images/strelitzia.png");
+    background: url("../../../assets/images/strelitzia.png");
     background-size: cover;
     background-position: center;
   }
