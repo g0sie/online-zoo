@@ -79,7 +79,7 @@
 }
 
 .pets .cards .card:hover .description {
-  height: calc(424px / 2);
+  height: 50%;
 
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -218,5 +218,104 @@
     background: url("../../../assets/images/strelitzia.png");
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .pets .cards {
+    grid-template-columns: repeat(4, calc((100% - 30px) / 2));
+    column-gap: 30px;
+  }
+
+  .pets .cards .card .image {
+    height: 100%;
+    min-width: 100%;
+  }
+
+  .pets .cards .card:hover .image {
+    transform: scale(calc((354 + 10) / 354));
+  }
+
+  .pets button.arrow.left {
+    left: calc(50% - 63px - 14px);
+  }
+
+  .pets button.arrow.right {
+    right: calc(50% - 63px - 14px);
+  }
+}
+
+@media (max-width: 700px) {
+  .pets {
+    padding-bottom: 214px;
+  }
+
+  .pets .cards {
+    grid-template-rows: repeat(2, 332px);
+  }
+
+  .pets .cards .card:hover .image {
+    transform: scale(calc((332 + 10) / 332));
+  }
+
+  .pets .card .description {
+    height: 46px;
+  }
+
+  .pets .description p.btn {
+    width: 229.13px;
+    height: 17px;
+    left: 12.47px;
+    top: 6.24px;
+
+    font-size: 12.4695px;
+  }
+
+  .pets .description p.small {
+    width: 229.13px;
+    height: 14px;
+    left: 12.47px;
+    top: 21.82px;
+
+    font-size: 11.6901px;
+  }
+
+  .pets .description .banana-bamboo {
+    top: 7.79px;
+    right: 9.11px;
+    width: 25.72px;
+    height: 28.84px;
+  }
+
+  .pets .description .meat-fish {
+    top: 6.24px;
+    right: 6px;
+    width: 37.41px;
+    height: 29.62px;
+  }
+
+  .pets button.arrow.left {
+    position: absolute;
+    top: 343px;
+  }
+
+  .pets button.arrow.right {
+    position: absolute;
+    top: 343px;
+  }
+
+  .pets button.rounded {
+    bottom: 100px;
+  }
+
+  .pets .flower-left {
+    width: 134px;
+    height: 202px;
+    background: url("../../../assets/images/palm_foto134x202.png");
+  }
+
+  .pets .flower-right {
+    height: 131px;
+    width: 175px;
   }
 }
