@@ -181,12 +181,11 @@
 
   .testimonials div.testimonials {
     margin-top: 30px;
-    grid-template-columns: repeat(4, 293px);
-    overflow: hidden;
+    grid-template-columns: repeat(4, calc((100% - 60px) / 3));
   }
 
   .testimonials .testimonial .text {
-    width: 255px;
+    width: calc(100% - 32px);
     height: 309px;
   }
 
@@ -214,5 +213,46 @@
     width: 196px;
     height: 325px;
     background: url("../../../assets/images/leav_foto_196x325.png");
+  }
+}
+
+@media (max-width: 860px) {
+  .testimonials div.testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 109px);
+    row-gap: 15px;
+    height: calc(3 * 109px + 30px);
+    overflow-y: hidden;
+  }
+
+  .testimonials .testimonial .text {
+    height: 38px;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonials .container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    height: calc(427px + 54px + 47px);
+  }
+
+  .testimonials input {
+    display: none;
+  }
+
+  .testimonials button {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 240px;
+  }
+
+  .testimonials .flower-img {
+    bottom: calc(135px - 204px);
+    width: 116px;
+    height: 204px;
+    background: url("../../../assets/images/leav_foto116x204.png");
   }
 }
