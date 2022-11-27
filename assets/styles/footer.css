@@ -5,6 +5,7 @@ footer {
 
 footer .container {
   position: relative;
+  height: 100%;
 }
 
 footer .logo {
@@ -238,5 +239,72 @@ footer form input[type="submit"]:has(~ input[type="email"]:focus:invalid) {
 
   footer form {
     right: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  footer nav {
+    left: 45%;
+    translate: -50%;
+  }
+}
+
+@media (max-width: 860px) {
+  footer .container {
+    overflow: hidden;
+  }
+
+  footer nav {
+    left: 191px;
+    left: 0;
+    translate: 0;
+  }
+
+  footer ul.socials {
+    right: -12px;
+    left: auto;
+    top: 161px;
+  }
+
+  footer button.btn {
+    top: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: calc(258px + 2 * 12px);
+    padding: 12px 0;
+  }
+
+  footer form {
+    display: none;
+  }
+
+  footer .logo {
+    top: 0;
+  }
+
+  footer ul.socials {
+    top: 0;
+    gap: 20px;
+  }
+
+  footer button.btn {
+    top: 85px;
+  }
+
+  footer nav {
+    top: auto;
+    bottom: 0;
+  }
+
+  footer .copyright {
+    top: auto;
+    bottom: -10px;
+  }
+
+  footer nav ul {
+    gap: 37px;
   }
 }

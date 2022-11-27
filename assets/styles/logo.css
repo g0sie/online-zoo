@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 700px) {
-  .logo-text {
+  header .logo-text {
     width: 47px;
     height: 29px;
     border: none;
@@ -41,7 +41,7 @@
     font-size: 12.29px;
   }
 
-  .logo-text::before {
+  header .logo-text::before {
     top: 13px;
     left: 3px;
 
