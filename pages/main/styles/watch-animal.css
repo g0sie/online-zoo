@@ -119,7 +119,8 @@
   }
 
   .watch-animal .circle {
-    left: calc(50% - 237.6px / 2 + 130.44px);
+    left: auto;
+    right: calc(20px + 53px);
     top: 44.23px;
     width: 237.6px;
     height: 237.6px;
@@ -135,7 +136,101 @@
   }
 
   .watch-animal button {
-    left: calc(50% - 298px / 2 - 151px);
+    left: 20px;
     top: 279px;
+  }
+}
+
+@media (max-width: 585px) {
+  .watch-animal {
+    height: calc(373px * 0.8);
+    overflow: visible;
+  }
+
+  .watch-animal .circle {
+    right: calc(16px + 53px);
+    width: calc(237.6px * 0.8);
+    height: calc(237.6px * 0.8);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.8);
+    top: calc(37.3px * 0.8);
+
+    width: calc(255.64px * 0.8);
+    height: calc(204.38px * 0.8);
+    font-size: calc(54.2894px * 0.8);
+  }
+
+  .watch-animal button {
+    top: auto;
+    bottom: -20px;
+    left: 50%;
+    translate: -50% 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .watch-animal {
+    height: calc(373px * 0.7);
+  }
+
+  .watch-animal .circle {
+    right: calc(14px + 40px);
+    width: calc(237.6px * 0.7);
+    height: calc(237.6px * 0.7);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.7);
+    top: calc(37.3px * 0.7);
+
+    width: calc(255.64px * 0.7);
+    height: calc(204.38px * 0.7);
+    font-size: calc(54.2894px * 0.7);
+  }
+}
+
+@media (max-width: 385px) {
+  .watch-animal {
+    height: calc(373px * 0.6);
+  }
+
+  .watch-animal .circle {
+    right: calc(12px + 35px);
+    width: calc(237.6px * 0.6);
+    height: calc(237.6px * 0.6);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.6);
+    top: calc(37.3px * 0.6);
+
+    width: calc(255.64px * 0.6);
+    height: calc(204.38px * 0.6);
+    font-size: calc(54.2894px * 0.6);
+  }
+}
+
+@media (max-width: 320px) {
+  .watch-animal {
+    height: calc(34px + 187px);
+  }
+
+  .watch-animal .circle {
+    top: calc(22.17px + 34px);
+    right: calc(27.74px + 11px);
+
+    width: 119.09px;
+    height: 119.09px;
+  }
+
+  .watch-animal .circle p {
+    left: 18.7px;
+    top: 18.95px;
+
+    width: 128.13px;
+    height: 102.44px;
+    font-size: 28px;
   }
 }

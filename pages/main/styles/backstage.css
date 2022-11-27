@@ -111,3 +111,9 @@
     background-position: center;
   }
 }
+
+@media (max-width: 585px) {
+  .backstage {
+    padding-top: 104px;
+  }
+}
