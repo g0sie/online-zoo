@@ -256,3 +256,37 @@
     background: url("../../../assets/images/leav_foto116x204.png");
   }
 }
+
+@media (max-width: 380px) {
+  .testimonials .container {
+    margin: 0 auto;
+    height: 580px;
+  }
+
+  .testimonials h3 {
+    width: 138px;
+    height: 29px;
+    margin-top: 30px;
+    margin-left: 50%;
+    translate: -50%;
+
+    font-size: 24px;
+  }
+
+  .testimonials div.testimonials {
+    margin-top: 20px;
+    grid-template-rows: repeat(4, 113px);
+    height: calc(3 * 113px + 30px);
+  }
+
+  .testimonials button {
+    bottom: 60px;
+  }
+
+  .testimonials .flower-img {
+    bottom: calc(-94px + 63.53px);
+    width: 51px;
+    height: 94px;
+    background: url("../../../assets/images/leav_foto_51x94.png");
+  }
+}
