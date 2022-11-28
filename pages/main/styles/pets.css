@@ -319,3 +319,42 @@
     width: 175px;
   }
 }
+
+@media (max-width: 520px) {
+  .pets {
+    padding-bottom: 134px;
+  }
+
+  .pets .cards {
+    margin: 0 auto;
+    width: 285px;
+    grid-template-rows: repeat(4, 332px);
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    height: calc(4 * 332px + 3 * 20px);
+  }
+
+  .pets button.arrow.left,
+  .pets button.arrow.right {
+    display: none;
+  }
+
+  .pets button.rounded {
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pets .flower-left {
+    width: 58px;
+    height: 72px;
+    background: url("../../../assets/images/palm_foto_58x72.png");
+  }
+
+  .pets .flower-right {
+    bottom: -4px;
+    height: 71px;
+    width: 68px;
+    background: url("../../../assets/images/strelitzia_68x71.png");
+  }
+}
