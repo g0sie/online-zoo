@@ -27,9 +27,28 @@ section {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 /* Firefox */
 input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    max-width: calc(100% - 21px);
+  }
 }
