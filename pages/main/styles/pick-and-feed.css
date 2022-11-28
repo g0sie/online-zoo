@@ -394,12 +394,12 @@
 
   .pick-and-feed .widget.pay::after,
   .pick-and-feed .widget.zoo::after {
-    top: -16.5px;
-    left: 137px;
+    top: 193.5px;
+    left: 143px;
     width: 89px;
     height: 29px;
     background-image: url("../../../assets/icons/widgets/arrow_green.png");
-    rotate: 90deg;
+    rotate: 85deg;
   }
 
   .pick-and-feed .widget p {
