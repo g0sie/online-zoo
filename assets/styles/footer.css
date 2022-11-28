@@ -308,3 +308,64 @@ footer form input[type="submit"]:has(~ input[type="email"]:focus:invalid) {
     gap: 37px;
   }
 }
+
+@media (max-width: 610px) {
+  footer nav ul {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  footer {
+    height: fit-content;
+    padding: 0;
+  }
+
+  footer .container {
+    height: 334px;
+    padding: 20px 0;
+  }
+
+  footer ul.socials {
+    top: 73px;
+    right: auto;
+    left: 50%;
+    translate: calc(-50% + 12px + 26px) -2.5px;
+
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  footer ul.socials li span {
+    display: none;
+  }
+
+  footer ul.socials li {
+    width: 26px;
+    height: 26px;
+  }
+
+  footer button.btn {
+    top: 129px;
+  }
+
+  footer .copyright {
+    top: 213px;
+  }
+
+  footer nav {
+    bottom: 20px;
+    left: 50%;
+    translate: -50%;
+
+    width: calc(320px - 42px);
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  footer button.btn {
+    left: 50%;
+    translate: -50%;
+  }
+}

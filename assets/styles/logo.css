@@ -50,3 +50,23 @@
     width: 9px;
   }
 }
+
+@media (max-width: 580px) {
+  footer a.logo {
+    top: 20px;
+    left: 50%;
+    translate: -50%;
+  }
+
+  footer .logo-text {
+    display: block;
+    width: 128px;
+    height: 23px;
+    border: none;
+  }
+
+  footer .logo-text::before {
+    top: 0.5px;
+    left: 71px;
+  }
+}
