@@ -165,11 +165,12 @@
 
   .backstage .flower-img {
     top: 38px;
-    left: calc(100vw - 105px + 74px);
+    left: calc(100vw - 35px);
     scale: none;
-    width: 105px;
+    width: 35px;
     height: 217px;
     background-repeat: no-repeat;
-    background: url("./../../../assets/images/flower_foto1_105x217.png");
+    background-position: center left;
+    background: url("./../../../assets/images/flower_foto1_35x225.png");
   }
 }
