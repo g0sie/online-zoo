@@ -365,6 +365,8 @@
     margin: 0 auto;
     margin-top: 165px;
     margin-left: calc(196 / 940 * 100%);
+
+    margin-left: calc(50% - 159px / 2 - 193.5px);
   }
 
   .donate .label {
@@ -405,5 +407,127 @@
 
   .donate form label[for="once"] {
     left: calc(523 / 940 * 100%);
+  }
+}
+
+@media (max-width: 960px) {
+  .donate p.subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .pick-and-feed h3 {
+    max-width: 675px;
+  }
+
+  .radio.dol2000 {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .panda-bg {
+    height: calc(335px + 34px);
+  }
+
+  .pick-and-feed h3 {
+    min-height: 58px;
+    width: 600px;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .pick-and-feed .container > p {
+    margin-top: 20px;
+    min-height: 154px;
+    line-height: 22px;
+  }
+
+  .pick-and-feed h3.orange {
+    min-height: 47px;
+    line-height: 47px;
+    margin-top: 30px;
+    font-size: 36px;
+  }
+
+  .pick-and-feed .donate {
+    margin-top: 30px;
+    margin-bottom: 46px;
+    padding-top: 30px;
+    padding-bottom: 30.98px;
+  }
+
+  .donate .subtitle {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .donate .diets {
+    margin-top: 155px;
+    margin-left: calc(50% - 159px / 2 - 193.5px);
+  }
+
+  .donate .label {
+    margin-top: 91px;
+    margin-left: 10px;
+  }
+
+  .donate .buttons {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .donate .buttons .line {
+    left: 41px;
+    right: 35px;
+  }
+
+  .donate .buttons .radio.dol1000 {
+    display: none;
+  }
+
+  .radio::after {
+    left: calc(17px - 35px);
+  }
+
+  .donate form input[type="number"] {
+    width: 180px;
+    height: 42px;
+    padding: 14px 5px;
+  }
+
+  .donate form img.dollar {
+    top: 11px;
+    left: calc(50% + (180px / 2) - 20px);
+  }
+
+  .donate form input[type="radio"]#monthly {
+    top: 75px;
+    left: calc(192 / 600 * 100%);
+  }
+
+  .donate form input[type="radio"]#once {
+    top: 75px;
+    left: calc(326 / 600 * 100%);
+  }
+
+  .donate form label[for="monthly"] {
+    top: 75px;
+    left: calc(192 / 600 * 100% + 26px);
+  }
+
+  .donate form label[for="once"] {
+    top: 75px;
+    left: calc(326 / 600 * 100% + 26px);
+  }
+
+  .donate button[type="submit"] {
+    margin-top: 82px;
   }
 }

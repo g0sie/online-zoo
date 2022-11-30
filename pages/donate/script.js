@@ -5,15 +5,18 @@ let clickedRadio = document.getElementById("clicked");
 let dietsNumber = document.getElementById("diets-number");
 let dollars;
 
-setDiets();
+clickRadioDependingOnWidth();
+setNumberOfDiets();
 
 radios.forEach((radio) => {
   radio.addEventListener("click", () => {
-    clickedRadio.id = null;
-    radio.id = "clicked";
-    clickedRadio = radio;
-    setDiets();
+    clickRadio(radio);
+    setNumberOfDiets();
   });
+});
+
+window.addEventListener("resize", () => {
+  clickRadioDependingOnWidth();
 });
 
 function getDollars() {
@@ -24,7 +27,19 @@ function countDiets(dollars) {
   return dollars / 250;
 }
 
-function setDiets() {
+function setNumberOfDiets() {
   dollars = getDollars(clickedRadio);
   dietsNumber.innerHTML = countDiets(dollars);
+}
+
+function clickRadio(radio) {
+  clickedRadio.id = null;
+  radio.id = "clicked";
+  clickedRadio = radio;
+}
+
+function clickRadioDependingOnWidth() {
+  if (window.innerWidth <= 850) {
+    clickRadio(document.querySelector(".radio.dol100"));
+  }
 }
