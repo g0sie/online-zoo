@@ -433,7 +433,8 @@
 
   .pick-and-feed h3 {
     min-height: 58px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     margin-top: 30px;
     font-size: 24px;
     line-height: 29px;
@@ -529,5 +530,196 @@
 
   .donate button[type="submit"] {
     margin-top: 82px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pick-and-feed {
+    --scale: 1.7;
+  }
+
+  .donate .diets {
+    margin-top: calc(69.49px * var(--scale));
+    margin-left: calc(50% - (89.66px / 2 + 102.17px) * var(--scale));
+    width: calc(89.66px * var(--scale));
+  }
+
+  .donate .diets .number {
+    height: calc(32.71px * var(--scale));
+    font-size: calc(40.6015px * var(--scale));
+  }
+
+  .donate .diets .text {
+    margin-top: calc(6.2px * var(--scale));
+    height: calc(12.41px * var(--scale));
+    font-size: calc(9.02255px * var(--scale));
+    line-height: calc(12.41px * var(--scale));
+  }
+
+  .donate .x {
+    top: calc((73.31px - 59.21px) * var(--scale));
+    left: calc((89.66px + 6.2px) * var(--scale));
+    width: calc(7.89px * var(--scale));
+    height: calc(7.89px * var(--scale));
+    background-size: cover;
+  }
+
+  .donate .panda {
+    display: block;
+    top: calc(-59.21px * var(--scale));
+    left: calc((89.66px + 50.19px) * var(--scale));
+    width: calc(160.15px * var(--scale));
+  }
+}
+
+@media (max-width: 550px) {
+  .pick-and-feed {
+    --scale: 1.6;
+  }
+
+  .pick-and-feed h3 {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .panda-bg {
+    height: calc(187px + 34px);
+  }
+
+  .pick-and-feed {
+    --scale: 1.4;
+
+    min-height: fit-content;
+  }
+
+  .pick-and-feed h3.orange {
+    min-height: 29px;
+    line-height: 29px;
+    font-size: calc(24px * var(--scale));
+  }
+
+  .pick-and-feed .donate {
+    min-height: 591px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+
+  .donate h2 {
+    min-height: 29px;
+    font-size: calc(24px * var(--scale));
+  }
+
+  .donate p.subtitle {
+    margin-top: 10px;
+    min-height: 44px;
+    font-size: calc(16px * var(--scale));
+  }
+
+  .donate .diets {
+    margin-top: 69.49px;
+  }
+
+  .donate .label {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .donate form {
+    margin-top: 80px;
+  }
+
+  .donate form input[type="radio"]#monthly {
+    top: 65px;
+    left: calc(50% - 84px / 2 - 67.5px);
+  }
+
+  .donate form input[type="radio"]#once {
+    top: 65px;
+    left: calc(50% - 84px / 2 + 66.5px);
+  }
+
+  .donate form label[for="monthly"] {
+    top: 63px;
+    left: calc(50% - 84px / 2 - 67.5px + 26px);
+  }
+
+  .donate form label[for="once"] {
+    top: 63px;
+    left: calc(50% - 84px / 2 + 66.5px + 26px);
+  }
+
+  .donate button[type="submit"] {
+    margin-top: 74px;
+  }
+}
+
+@media (max-width: 450px) {
+  .pick-and-feed {
+    --scale: 1.2;
+  }
+
+  .donate .buttons {
+    height: 13.5px;
+    padding-left: 20.5px;
+    padding-right: 18.5px;
+  }
+
+  .donate .buttons .line {
+    top: 6px;
+    height: 1px;
+    left: 20.5px;
+    right: 18.5px;
+  }
+
+  .donate .buttons .radio {
+    width: 5px;
+    height: 5px;
+  }
+
+  .radio::before {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    translate: -7.5px -9.5px;
+  }
+
+  .radio::after {
+    top: 14px;
+    left: -12px;
+    width: 15px;
+    height: 18px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .donate .label {
+    margin-top: calc(256px - 211.4px - 12.42px);
+  }
+
+  .donate form {
+    margin-top: calc(349px - 286px - 13px);
+  }
+}
+
+@media (max-width: 400px) {
+  .pick-and-feed {
+    --scale: 1.1;
+  }
+}
+
+@media (max-width: 350px) {
+  .pick-and-feed {
+    --scale: 1;
+  }
+
+  .donate p.share {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    translate: -50%;
+    width: 301px;
   }
 }
