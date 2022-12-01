@@ -1,7 +1,7 @@
 .panda-bg {
   height: calc(390px - 4px);
-  background-image: url("../../assets/images/panda_bg.svg");
-  background-position: bottom;
+  background-image: url("../../assets/images/panda_bg.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -12,26 +12,26 @@
 
 .pick-and-feed h3 {
   margin-top: 40px;
-  height: 47px;
+  min-height: 47px;
   color: white;
 }
 
 .pick-and-feed .container > p {
   margin-top: 10px;
-  height: 94px;
+  min-height: 94px;
   color: white;
   font-weight: 500;
 }
 
 .pick-and-feed h3.orange {
   margin-top: 40px;
-  height: 47px;
+  min-height: 47px;
   color: #fe9013;
 }
 
 .pick-and-feed .donate {
   position: relative;
-  height: 964px;
+  min-height: 964px;
   margin-top: 60px;
   margin-bottom: 180px;
   padding-top: 40px;
@@ -46,17 +46,18 @@
 }
 
 .donate h2 {
-  height: 58px;
+  min-height: 58px;
   text-align: center;
   color: #fe9013;
 }
 
 .donate .subtitle {
   margin-top: 20px;
-  height: 29px;
+  min-height: 29px;
 }
 
 .donate .diets {
+  position: relative;
   margin-top: 165px;
   margin-left: 215px;
   width: 159px;
@@ -78,14 +79,14 @@
 
 .donate .x {
   position: absolute;
-  top: 337px;
-  left: 477px;
+  top: calc(190px - 165px);
+  left: 170px;
 }
 
 .donate .panda {
   position: absolute;
-  top: 207px;
-  left: 555px;
+  top: calc(60px - 165px);
+  left: calc(159px + 89px);
 }
 
 .donate .label {
@@ -105,8 +106,8 @@
   height: 27px;
   margin-top: 17px;
   margin-bottom: 12px;
-  padding-left: calc(26px - 15px);
-  padding-right: calc(30px - 15px);
+  padding-left: 26px;
+  padding-right: 30px;
 
   border-radius: 2px;
   background-color: #404950;
@@ -116,41 +117,38 @@
   position: absolute;
   top: 13px;
   left: 31px;
+  right: 31px;
 
   height: 2px;
-  width: 915px;
   background-color: #72828e;
 }
 
 .donate .buttons .radio {
   position: relative;
-  align-self: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  border: 15px solid transparent;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #ffee2e padding-box;
   z-index: 1;
 }
 
-.radio:hover::before {
+.radio::before {
   content: "";
   display: block;
   width: 40px;
   height: 40px;
   translate: -15px -17px;
   background: url("../../assets/icons/roller_icon.png");
+  opacity: 0;
+}
+
+.radio:hover::before {
   opacity: 0.5;
 }
 
 .radio#clicked::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  translate: -15px -17px;
-  background: url("../../assets/icons/roller_icon.png");
   opacity: 1;
 }
 
@@ -207,6 +205,7 @@
 
 .donate form {
   margin-top: calc(92px + 6.5px);
+  position: relative;
 }
 
 .donate form input[type="number"] {
@@ -240,12 +239,14 @@
 .donate form img.dollar {
   position: absolute;
   top: 682px;
+  top: 17px;
   left: 694px;
+  left: calc(50% + (268px / 2) - 20px);
 }
 
 .donate form input[type="radio"] {
   position: absolute;
-  top: 746px;
+  top: 79px;
 
   appearance: none;
   width: 16px;
@@ -258,11 +259,11 @@
 }
 
 .donate form input[type="radio"]#monthly {
-  left: 474px;
+  left: 382px;
 }
 
 .donate form input[type="radio"]#once {
-  right: 536px;
+  left: 516px;
 }
 
 .donate form input[type="radio"]::before {
@@ -296,7 +297,7 @@
 
 .donate form label {
   position: absolute;
-  top: 744px;
+  top: 79px;
 
   font-weight: 400;
   font-size: 16px;
@@ -306,11 +307,11 @@
 }
 
 .donate form label[for="monthly"] {
-  left: 500px;
+  left: 408px;
 }
 
 .donate form label[for="once"] {
-  right: 489px;
+  left: 542px;
 }
 
 .donate button[type="submit"] {
@@ -322,4 +323,403 @@
   text-align: center;
   margin-top: 30px;
   height: 22px;
+}
+
+@media (max-width: 1200px) {
+  .panda-bg {
+    height: 390px;
+  }
+
+  .pick-and-feed {
+    min-height: 1333px;
+    height: fit-content;
+  }
+
+  .pick-and-feed h3 {
+    min-height: 94px;
+    width: 780px;
+  }
+
+  .pick-and-feed .container > p {
+    margin-top: 30px;
+  }
+
+  .pick-and-feed .donate {
+    height: fit-content;
+    min-height: 918px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 46px;
+  }
+
+  .donate .subtitle {
+    margin-top: 10px;
+    margin-left: 47px;
+    max-width: calc(100% - 47px - 44px);
+  }
+
+  .donate .diets {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-left: calc(196 / 940 * 100%);
+
+    margin-left: calc(50% - 159px / 2 - 193.5px);
+  }
+
+  .donate .label {
+    margin-left: 65px;
+  }
+
+  .donate .buttons {
+    margin-left: 65px;
+    margin-right: 65px;
+    padding-left: 11px;
+    padding-right: 9px;
+  }
+
+  .donate .buttons .line {
+    left: 11px;
+    right: 9px;
+  }
+
+  .radio.dol5000 {
+    display: none;
+  }
+
+  .radio::after {
+    left: calc(65px - 76px);
+  }
+
+  .donate form input[type="radio"]#monthly {
+    left: calc(363 / 940 * 100%);
+  }
+
+  .donate form input[type="radio"]#once {
+    left: calc(497 / 940 * 100%);
+  }
+
+  .donate form label[for="monthly"] {
+    left: calc(389 / 940 * 100%);
+  }
+
+  .donate form label[for="once"] {
+    left: calc(523 / 940 * 100%);
+  }
+}
+
+@media (max-width: 960px) {
+  .donate p.subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .pick-and-feed h3 {
+    max-width: 675px;
+  }
+
+  .radio.dol2000 {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .panda-bg {
+    height: calc(335px + 34px);
+  }
+
+  .pick-and-feed h3 {
+    min-height: 58px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .pick-and-feed .container > p {
+    margin-top: 20px;
+    min-height: 154px;
+    line-height: 22px;
+  }
+
+  .pick-and-feed h3.orange {
+    min-height: 47px;
+    line-height: 47px;
+    margin-top: 30px;
+    font-size: 36px;
+  }
+
+  .pick-and-feed .donate {
+    margin-top: 30px;
+    margin-bottom: 46px;
+    padding-top: 30px;
+    padding-bottom: 30.98px;
+  }
+
+  .donate .subtitle {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .donate .diets {
+    margin-top: 155px;
+    margin-left: calc(50% - 159px / 2 - 193.5px);
+  }
+
+  .donate .label {
+    margin-top: 91px;
+    margin-left: 10px;
+  }
+
+  .donate .buttons {
+    margin-top: 7px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .donate .buttons .line {
+    left: 41px;
+    right: 35px;
+  }
+
+  .donate .buttons .radio.dol1000 {
+    display: none;
+  }
+
+  .radio::after {
+    left: calc(17px - 35px);
+  }
+
+  .donate form input[type="number"] {
+    width: 180px;
+    height: 42px;
+    padding: 14px 5px;
+  }
+
+  .donate form img.dollar {
+    top: 11px;
+    left: calc(50% + (180px / 2) - 20px);
+  }
+
+  .donate form input[type="radio"]#monthly {
+    top: 75px;
+    left: calc(192 / 600 * 100%);
+  }
+
+  .donate form input[type="radio"]#once {
+    top: 75px;
+    left: calc(326 / 600 * 100%);
+  }
+
+  .donate form label[for="monthly"] {
+    top: 75px;
+    left: calc(192 / 600 * 100% + 26px);
+  }
+
+  .donate form label[for="once"] {
+    top: 75px;
+    left: calc(326 / 600 * 100% + 26px);
+  }
+
+  .donate button[type="submit"] {
+    margin-top: 82px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pick-and-feed {
+    --scale: 1.7;
+  }
+
+  .donate .diets {
+    margin-top: calc(69.49px * var(--scale));
+    margin-left: calc(50% - (89.66px / 2 + 102.17px) * var(--scale));
+    width: calc(89.66px * var(--scale));
+  }
+
+  .donate .diets .number {
+    height: calc(32.71px * var(--scale));
+    font-size: calc(40.6015px * var(--scale));
+  }
+
+  .donate .diets .text {
+    margin-top: calc(6.2px * var(--scale));
+    height: calc(12.41px * var(--scale));
+    font-size: calc(9.02255px * var(--scale));
+    line-height: calc(12.41px * var(--scale));
+  }
+
+  .donate .x {
+    top: calc((73.31px - 59.21px) * var(--scale));
+    left: calc((89.66px + 6.2px) * var(--scale));
+    width: calc(7.89px * var(--scale));
+    height: calc(7.89px * var(--scale));
+    background-size: cover;
+  }
+
+  .donate .panda {
+    display: block;
+    top: calc(-59.21px * var(--scale));
+    left: calc((89.66px + 50.19px) * var(--scale));
+    width: calc(160.15px * var(--scale));
+  }
+}
+
+@media (max-width: 550px) {
+  .pick-and-feed {
+    --scale: 1.6;
+  }
+
+  .pick-and-feed h3 {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .panda-bg {
+    height: calc(187px + 34px);
+  }
+
+  .pick-and-feed {
+    --scale: 1.4;
+
+    min-height: fit-content;
+  }
+
+  .pick-and-feed h3.orange {
+    min-height: 29px;
+    line-height: 29px;
+    font-size: calc(24px * var(--scale));
+  }
+
+  .pick-and-feed .donate {
+    min-height: 591px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+  }
+
+  .donate h2 {
+    min-height: 29px;
+    font-size: calc(24px * var(--scale));
+  }
+
+  .donate p.subtitle {
+    margin-top: 10px;
+    min-height: 44px;
+    font-size: calc(16px * var(--scale));
+  }
+
+  .donate .diets {
+    margin-top: 69.49px;
+  }
+
+  .donate .label {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .donate form {
+    margin-top: 80px;
+  }
+
+  .donate form input[type="radio"]#monthly {
+    top: 65px;
+    left: calc(50% - 84px / 2 - 67.5px);
+  }
+
+  .donate form input[type="radio"]#once {
+    top: 65px;
+    left: calc(50% - 84px / 2 + 66.5px);
+  }
+
+  .donate form label[for="monthly"] {
+    top: 63px;
+    left: calc(50% - 84px / 2 - 67.5px + 26px);
+  }
+
+  .donate form label[for="once"] {
+    top: 63px;
+    left: calc(50% - 84px / 2 + 66.5px + 26px);
+  }
+
+  .donate button[type="submit"] {
+    margin-top: 74px;
+  }
+}
+
+@media (max-width: 450px) {
+  .pick-and-feed {
+    --scale: 1.2;
+  }
+
+  .donate .buttons {
+    height: 13.5px;
+    padding-left: 20.5px;
+    padding-right: 18.5px;
+  }
+
+  .donate .buttons .line {
+    top: 6px;
+    height: 1px;
+    left: 20.5px;
+    right: 18.5px;
+  }
+
+  .donate .buttons .radio {
+    width: 5px;
+    height: 5px;
+  }
+
+  .radio::before {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    translate: -7.5px -9.5px;
+  }
+
+  .radio::after {
+    top: 14px;
+    left: -12px;
+    width: 15px;
+    height: 18px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .donate .label {
+    margin-top: calc(256px - 211.4px - 12.42px);
+  }
+
+  .donate form {
+    margin-top: calc(349px - 286px - 13px);
+  }
+}
+
+@media (max-width: 400px) {
+  .pick-and-feed {
+    --scale: 1.1;
+  }
+}
+
+@media (max-width: 350px) {
+  .pick-and-feed {
+    --scale: 1;
+  }
+
+  .donate p.share {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    translate: -50%;
+    width: 301px;
+  }
 }

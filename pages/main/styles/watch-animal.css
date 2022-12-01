@@ -1,0 +1,236 @@
+.watch-animal {
+  position: relative;
+  background-image: url("../../../assets/images/panda_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 780px;
+}
+
+.watch-animal .circle {
+  position: absolute;
+  top: 92px;
+  left: calc(50% - 465px / 2 + 239.5px);
+
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.watch-animal .circle p {
+  position: absolute;
+  left: 73px;
+  top: 74px;
+
+  width: 500.31px;
+
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  cursor: default;
+}
+
+.watch-animal .circle p .yellow {
+  color: var(--yellow);
+}
+
+.watch-animal button {
+  position: absolute;
+  left: calc(50% - 298px / 2 + 332px);
+  top: 626px;
+}
+
+@media (max-width: 1200px) {
+  .watch-animal {
+    height: 584px;
+  }
+
+  .watch-animal .circle {
+    top: 69px;
+    left: calc(50% - 367px / 2 + 139.5px);
+
+    width: 367px;
+    height: 367px;
+  }
+
+  .watch-animal .circle p {
+    left: 58px;
+    top: 53.8px;
+
+    width: 400.25px;
+    height: 320px;
+
+    font-size: 85px;
+  }
+
+  .watch-animal button {
+    left: calc(50% - 298px / 2 + 214px);
+    top: 483px;
+  }
+}
+
+@media (max-width: 840px) {
+  .watch-animal .circle {
+    left: calc(50% - 367px / 2 + 119.5px);
+  }
+
+  .watch-animal button {
+    left: calc(50% - 298px / 2 + 194px);
+  }
+}
+
+@media (max-width: 800px) {
+  .watch-animal .circle p {
+    left: 34px;
+  }
+
+  .watch-animal button {
+    left: calc(50% - 298px / 2 + 170px);
+  }
+}
+
+@media (max-width: 750px) {
+  .watch-animal .circle {
+    left: calc(50% - 320px / 2 + 130.44px);
+    top: 100px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .watch-animal .circle p {
+    width: 320px;
+    height: 320px;
+    font-size: 69px;
+  }
+
+  .watch-animal button {
+    top: 445px;
+  }
+}
+
+@media (max-width: 700px) {
+  .watch-animal {
+    height: 373px;
+  }
+
+  .watch-animal .circle {
+    left: auto;
+    right: calc(20px + 53px);
+    top: 44.23px;
+    width: 237.6px;
+    height: 237.6px;
+  }
+
+  .watch-animal .circle p {
+    left: 37.81px;
+    top: 37.3px;
+
+    width: 255.64px;
+    height: 204.38px;
+    font-size: 54.2894px;
+  }
+
+  .watch-animal button {
+    left: 20px;
+    top: 279px;
+  }
+}
+
+@media (max-width: 585px) {
+  .watch-animal {
+    height: calc(373px * 0.8);
+    overflow: visible;
+  }
+
+  .watch-animal .circle {
+    right: calc(16px + 53px);
+    width: calc(237.6px * 0.8);
+    height: calc(237.6px * 0.8);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.8);
+    top: calc(37.3px * 0.8);
+
+    width: calc(255.64px * 0.8);
+    height: calc(204.38px * 0.8);
+    font-size: calc(54.2894px * 0.8);
+  }
+
+  .watch-animal button {
+    top: auto;
+    bottom: -20px;
+    left: 50%;
+    translate: -50% 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .watch-animal {
+    height: calc(373px * 0.7);
+  }
+
+  .watch-animal .circle {
+    right: calc(14px + 40px);
+    width: calc(237.6px * 0.7);
+    height: calc(237.6px * 0.7);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.7);
+    top: calc(37.3px * 0.7);
+
+    width: calc(255.64px * 0.7);
+    height: calc(204.38px * 0.7);
+    font-size: calc(54.2894px * 0.7);
+  }
+}
+
+@media (max-width: 385px) {
+  .watch-animal {
+    height: calc(373px * 0.6);
+  }
+
+  .watch-animal .circle {
+    right: calc(12px + 35px);
+    width: calc(237.6px * 0.6);
+    height: calc(237.6px * 0.6);
+  }
+
+  .watch-animal .circle p {
+    left: calc(37.81px * 0.6);
+    top: calc(37.3px * 0.6);
+
+    width: calc(255.64px * 0.6);
+    height: calc(204.38px * 0.6);
+    font-size: calc(54.2894px * 0.6);
+  }
+}
+
+@media (max-width: 320px) {
+  .watch-animal {
+    height: calc(34px + 187px);
+  }
+
+  .watch-animal .circle {
+    top: calc(22.17px + 34px);
+    right: calc(27.74px + 11px);
+
+    width: 119.09px;
+    height: 119.09px;
+  }
+
+  .watch-animal .circle p {
+    left: 18.7px;
+    top: 18.95px;
+
+    width: 128.13px;
+    height: 102.44px;
+    font-size: 28px;
+  }
+}

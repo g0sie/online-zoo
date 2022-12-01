@@ -5,6 +5,7 @@ footer {
 
 footer .container {
   position: relative;
+  height: 100%;
 }
 
 footer .logo {
@@ -48,13 +49,18 @@ footer ul.socials li a {
   color: #ffffff;
 }
 
-footer ul.socials li a:hover,
+footer ul.socials li a:hover {
+  background: var(--orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 footer ul.socials li a:active {
   background: var(--green);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 footer ul.socials li a::before {
@@ -68,7 +74,10 @@ footer ul.socials li a::before {
   background: rgba(196, 196, 196, 0.5);
 }
 
-footer ul.socials li a:hover::before,
+footer ul.socials li a:hover::before {
+  background: var(--orange);
+}
+
 footer ul.socials li a:active::before {
   background: var(--green);
 }
@@ -80,7 +89,7 @@ footer ul.socials li.facebook a::after {
   top: calc(-2.5px + 26px / 2 - 16px / 2);
   width: 8px;
   height: 16px;
-  background: url(../../assets/icons/facebook.svg);
+  background: url("../../assets/icons/socials/facebook.png");
 }
 
 footer ul.socials li.twitter a::after {
@@ -90,7 +99,7 @@ footer ul.socials li.twitter a::after {
   top: calc(-2.5px + 26px / 2 - 14px / 2);
   width: 16px;
   height: 14px;
-  background: url(../../assets/icons/twitter.svg);
+  background: url("../../assets/icons/socials/twitter.png");
 }
 
 footer ul.socials li.instagram a::after {
@@ -100,7 +109,7 @@ footer ul.socials li.instagram a::after {
   top: calc(-2.5px + 26px / 2 - 16px / 2);
   width: 16px;
   height: 16px;
-  background: url(../../assets/icons/instagram.svg);
+  background: url("../../assets/icons/socials/instagram.png");
 }
 
 footer ul.socials li.youtube a::after {
@@ -110,7 +119,7 @@ footer ul.socials li.youtube a::after {
   top: calc(-2.5px + 26px / 2 - 13px / 2);
   width: 18px;
   height: 13px;
-  background: url(../../assets/icons/youtube.svg);
+  background: url("../../assets/icons/socials/youtube.png");
 }
 
 footer nav {
@@ -135,9 +144,12 @@ footer .copyright p {
   color: #ffffff;
 }
 
-footer .copyright:hover p,
+footer .copyright:hover p {
+  margin-bottom: 9px;
+  border-bottom: 1px solid #fe9013;
+}
+
 footer .copyright:active p {
-  content: "";
   margin-bottom: 9px;
   border-bottom: 1px solid var(--green);
 }
@@ -218,4 +230,142 @@ footer form input[type="submit"]:has(~ input[type="email"]:focus:valid) {
 
 footer form input[type="submit"]:has(~ input[type="email"]:focus:invalid) {
   color: var(--red);
+}
+
+@media (max-width: 1200px) {
+  footer nav {
+    left: 291px;
+  }
+
+  footer form {
+    right: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  footer nav {
+    left: 45%;
+    translate: -50%;
+  }
+}
+
+@media (max-width: 860px) {
+  footer .container {
+    overflow: hidden;
+  }
+
+  footer nav {
+    left: 191px;
+    left: 0;
+    translate: 0;
+  }
+
+  footer ul.socials {
+    right: -12px;
+    left: auto;
+    top: 161px;
+  }
+
+  footer button.btn {
+    top: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: calc(258px + 2 * 12px);
+    padding: 12px 0;
+  }
+
+  footer form {
+    display: none;
+  }
+
+  footer .logo {
+    top: 0;
+  }
+
+  footer ul.socials {
+    top: 0;
+    gap: 20px;
+  }
+
+  footer button.btn {
+    top: 85px;
+  }
+
+  footer nav {
+    top: auto;
+    bottom: 0;
+  }
+
+  footer .copyright {
+    top: auto;
+    bottom: -10px;
+  }
+
+  footer nav ul {
+    gap: 37px;
+  }
+}
+
+@media (max-width: 610px) {
+  footer nav ul {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  footer {
+    height: fit-content;
+    padding: 0;
+  }
+
+  footer .container {
+    height: 334px;
+    padding: 20px 0;
+  }
+
+  footer ul.socials {
+    top: 73px;
+    right: auto;
+    left: 50%;
+    translate: calc(-50% + 12px + 26px) -2.5px;
+
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  footer ul.socials li span {
+    display: none;
+  }
+
+  footer ul.socials li {
+    width: 26px;
+    height: 26px;
+  }
+
+  footer button.btn {
+    top: 129px;
+  }
+
+  footer .copyright {
+    top: 213px;
+  }
+
+  footer nav {
+    bottom: 20px;
+    left: 50%;
+    translate: -50%;
+
+    width: calc(320px - 42px);
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  footer button.btn {
+    left: 50%;
+    translate: -50%;
+  }
 }

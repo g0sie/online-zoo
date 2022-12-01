@@ -1,0 +1,292 @@
+.testimonials {
+  position: relative;
+}
+
+.testimonials .container {
+  position: relative;
+  margin-top: 140px;
+  margin-bottom: 204px;
+  height: 575px;
+}
+
+.testimonials h3 {
+  color: var(--black-blue);
+  text-align: center;
+}
+
+.testimonials div.testimonials {
+  margin-top: 47px;
+  margin-bottom: 21px;
+  height: 391px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.testimonials div.testimonials .testimonial {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--pink-gradient);
+}
+
+.testimonials .testimonial .wrapper {
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: var(--gray-light) padding-box;
+}
+
+.testimonials .testimonial .user-icon {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: 16px;
+  top: 15px;
+  background: url("../../../assets/icons/user_icon.png");
+}
+
+.testimonials .testimonial .user-icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial .name {
+  position: absolute;
+  height: 19px;
+  left: 63px;
+  top: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.testimonials .testimonial .location {
+  position: absolute;
+  width: 87px;
+  height: 18px;
+  left: 63px;
+  top: 35px;
+
+  color: #bdbdbd;
+}
+
+.testimonials .testimonial .dot {
+  position: absolute;
+  width: 5px;
+  height: 18px;
+  left: 156px;
+  top: 35px;
+
+  color: #bdbdbd;
+}
+
+.testimonials .testimonial .date {
+  position: absolute;
+  width: 41px;
+  height: 18px;
+  left: 166px;
+  top: 35px;
+
+  color: #bdbdbd;
+}
+
+.testimonials .testimonial .text {
+  position: absolute;
+  width: 237px;
+  height: 308px;
+  left: 16px;
+  top: 63px;
+
+  color: var(--gray);
+  overflow: hidden;
+}
+
+.testimonials input {
+  position: absolute;
+  width: 600px;
+  height: 8px;
+  left: 50%;
+  top: 506px;
+  translate: -50%;
+
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(#f5f7f6, #f5f7f6) padding-box,
+    var(--pink-gradient) border-box;
+  border: solid 0.5px transparent;
+  border-radius: 5px;
+}
+
+/* Special styling for WebKit/Blink */
+.testimonials input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  width: 115.19px;
+  border-radius: 5px;
+  background: #fe9013;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+.testimonials input::-moz-range-thumb {
+  height: 6px;
+  width: 115.19px;
+  border-radius: 5px;
+  background: #fe9013;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.testimonials input::-ms-thumb {
+  height: 6px;
+  width: 115.19px;
+  border-radius: 5px;
+  background: #fe9013;
+  cursor: pointer;
+}
+
+.testimonials button {
+  position: absolute;
+  top: 545px;
+  left: 0;
+}
+
+.testimonials .flower-img {
+  position: absolute;
+  bottom: calc(-408px + 274.5px);
+  right: 0;
+  width: 247px;
+  height: 408px;
+  background: url("../../../assets/images/leav_foto.png");
+}
+
+@media (max-width: 1200px) {
+  .testimonials .container {
+    margin-top: 100px;
+    margin-bottom: 274px;
+    height: 468px;
+  }
+
+  .testimonials div.testimonials {
+    margin-top: 30px;
+    grid-template-columns: repeat(4, calc((100% - 60px) / 3));
+    overflow: hidden;
+  }
+
+  .testimonials .testimonial .text {
+    width: calc(100% - 32px);
+    height: 309px;
+  }
+
+  .testimonials input {
+    top: 488px;
+    width: 390px;
+  }
+
+  .testimonials input::-webkit-slider-thumb {
+    width: 75px;
+  }
+  .testimonials input::-moz-range-thumb {
+    width: 75px;
+  }
+  .testimonials input::-ms-thumb {
+    width: 75px;
+  }
+
+  .testimonials button {
+    top: calc(468px + 80px);
+  }
+
+  .testimonials .flower-img {
+    bottom: calc(238.24px - 325px);
+    width: 196px;
+    height: 325px;
+    background: url("../../../assets/images/leav_foto_196x325.png");
+  }
+}
+
+@media (max-width: 860px) {
+  .testimonials div.testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 109px);
+    row-gap: 15px;
+    height: calc(3 * 109px + 30px);
+  }
+
+  .testimonials .testimonial .text {
+    height: 38px;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonials .container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    height: calc(427px + 54px + 47px);
+  }
+
+  .testimonials input {
+    display: none;
+  }
+
+  .testimonials button {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 240px;
+  }
+
+  .testimonials .flower-img {
+    bottom: calc(135px - 204px);
+    width: 116px;
+    height: 204px;
+    background: url("../../../assets/images/leav_foto116x204.png");
+  }
+}
+
+@media (max-width: 380px) {
+  .testimonials .container {
+    margin: 0 auto;
+    height: 580px;
+  }
+
+  .testimonials h3 {
+    width: 138px;
+    height: 29px;
+    margin-top: 30px;
+    margin-left: 50%;
+    translate: -50%;
+
+    font-size: 24px;
+  }
+
+  .testimonials div.testimonials {
+    margin-top: 20px;
+    grid-template-rows: repeat(4, 113px);
+    height: calc(3 * 113px + 30px);
+  }
+
+  .testimonials button {
+    bottom: 60px;
+  }
+
+  .testimonials .flower-img {
+    bottom: calc(-94px + 63.53px);
+    width: 51px;
+    height: 94px;
+    background: url("../../../assets/images/leav_foto_51x94.png");
+  }
+}
