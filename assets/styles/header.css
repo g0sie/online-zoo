@@ -73,6 +73,7 @@ header nav .hamburger {
   }
 }
 
+/* hamburger menu appears */
 @media (max-width: 700px) {
   header nav ul {
     display: none;
@@ -82,6 +83,7 @@ header nav .hamburger {
     position: fixed;
     height: 34px;
     width: 100%;
+    transition: 0.3s ease-in-out;
   }
 
   header nav .hamburger {
@@ -101,6 +103,7 @@ header nav .hamburger {
     width: 18px;
     height: 2px;
     background-color: white;
+    transform-origin: top right;
   }
 
   header nav .hamburger .bar:nth-child(2) {
@@ -109,5 +112,77 @@ header nav .hamburger {
 
   header nav .hamburger .bar:nth-child(3) {
     top: 8px;
+    transform-origin: bottom right;
+  }
+
+  /* OPENED MENU */
+
+  header.opened {
+    height: 329px;
+    padding: 82px 10px 40px 10px;
+    background-color: white;
+  }
+
+  header.opened a.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  header.opened a.logo h1 {
+    width: 65.6px;
+    height: 41.6px;
+    font-size: 15.2116px;
+    line-height: 18px;
+    color: #fe9013;
+    border: 0.8px solid #fe9013;
+  }
+
+  header.opened a.logo h1::before {
+    top: 21px;
+    left: 8px;
+    filter: invert(63%) sepia(70%) saturate(2268%) hue-rotate(348deg)
+      brightness(102%) contrast(105%);
+  }
+
+  header.opened nav {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  header.opened nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header.opened nav ul li {
+    width: 100%;
+  }
+
+  header.opened nav ul li a,
+  header.opened nav ul li a#current-page {
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+
+    background: var(--black-blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  header.opened nav .hamburger .bar {
+    background-color: #fe9013;
+    rotate: -45deg;
+  }
+
+  header.opened nav .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  header.opened nav .hamburger .bar:nth-child(3) {
+    top: 12px;
+    rotate: 45deg;
   }
 }
